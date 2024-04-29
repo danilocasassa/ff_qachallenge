@@ -7,7 +7,7 @@
     "test:cypress:headed": "npx cypress run --headed --browser chrome --spec **/*.feature && node cypress/e2e/cucumber-html-report.js",
     "test:cypress:edge": "npx cypress run --browser edge --spec **/*.feature && node cypress/e2e/cucumber-html-report.js",
     "test:cypress:headed:edge": "npx cypress run --headed --browser edge --spec **/*.feature && node cypress/e2e/cucumber-html-report.js",
-    "test:api": "npx mocha api/test --timeout 0 --report mochawesome --reporter-options reportDir=api/mochawesome",
+    "test:api": "npx mocha api/test --timeout 0 --reporter mochawesome --reporter-options reportDir=api/mochawesome-report",
     "test:api:setup": "npx mocha api --timeout 0"
   },
   "author": "",

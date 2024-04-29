@@ -1,5 +1,8 @@
 node_modules
 package-lock.json
+.DS_STORE
+api/.DS_STORE
 
 api/.env
+api/mochawesome-report
 cypress/e2e/reports
