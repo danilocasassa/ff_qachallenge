@@ -70,7 +70,7 @@ BASE_URL={TEAM_TAILOR_API}
 
 To run the Cypress + Cucumber E2E test, you have to execute the following command:
 ```sh
-npm run test: cypress
+npm run test:cypress
 ```
 
 This command will run the E2E test on browser `Chrome` in `headless` mode (without open the browser view)
