@@ -89,8 +89,7 @@ Will generate a report of the execution on terminal like below:
 And will generate a HTML report on directory `./cypress/e2e/reports/cucumber-htmlreport.html/index.html`
 Where is possible to see all steps executed on Gherkin structure like below:
 
-<img width="439" alt="Screenshot 2024-04-29 at 12 43 27" src="https://github.com/danilocasassa/ff_qachallenge/assets/22626541/7b703023-2fa5-48e1-b063-e2206945ac69">
-
+<img width="953" alt="Screenshot 2024-04-29 at 12 43 42 (1)" src="https://github.com/danilocasassa/ff_qachallenge/assets/22626541/7506f403-5e59-470d-b31b-8f2c526b0007">
 
 There are other ways to run the tests like other browser or without headless mode activated.
 
