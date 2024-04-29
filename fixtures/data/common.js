@@ -3,6 +3,11 @@ const urls = {
     careers: "company/careers",
 }
 
+const teamtailorAPI = {
+    base: "https://api.teamtailor.com/v1"
+}
+
 module.exports = {
-    urls
+    urls,
+    teamtailorAPI
 };

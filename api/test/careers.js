@@ -44,8 +44,26 @@ describe('Verify Job by Teamtailor API', function () {
 
     describe("It's not possible change the job title using the website token", function() {
 
+        let jobId, jobTitle, patchResponse
+
         it('Getting the QA job id', async function() {
-            console.log(response.data.data)
+            const qaJob = response.data.data.find(job => job.attributes.title.toLowerCase().includes('quality assurance'));
+            jobId = qaJob.id;
+            jobTitle = qaJob.attributes.title;
+        });
+
+        it("Send a request to change the job title", async function() {
+            patchResponse = await teamtailor.changeJobTitle(jobId, jobTitle);
+        });
+
+        it("Response status should be 403", function() {
+            assert.equal(patchResponse.status, 403, `Response status should be 403`);
+        });
+
+        it("Check the job keep with the same title", async function() {
+            const jobData = await teamtailor.getJob(jobId);
+            const currentTitle = jobData.data.data.attributes.title
+            assert.equal(currentTitle, jobTitle, `The job title is not the same!`)
         })
     })
 });
