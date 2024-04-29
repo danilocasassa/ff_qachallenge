@@ -6,6 +6,6 @@ const newJobs = {
     jobDepartment: ".teamtailor-jobs__department"
 }
 
-module.exports = { 
+module.exports = {
     newJobs
 }

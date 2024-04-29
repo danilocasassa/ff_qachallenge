@@ -16,7 +16,7 @@ function isThereJobListed(jobReference) {
     let matchedJob
     jobsReference.forEach((jobRef) => {
         const matchedKeyword = jobRef.keywords.find(keyword => keyword.toLowerCase().includes(jobReference.toLowerCase()));
-        
+
         if (matchedKeyword) {
             matchedJob = jobRef.job.toLowerCase();
         }

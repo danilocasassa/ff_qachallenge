@@ -4,6 +4,6 @@ const cookiePolicy = {
     settings: "#hs-eu-cookie-settings-button"
 }
 
-module.exports = { 
+module.exports = {
     cookiePolicy
 }

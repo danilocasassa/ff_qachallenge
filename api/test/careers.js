@@ -17,11 +17,11 @@ describe('Verify Job by Teamtailor API', function () {
 
     describe("Check the QA job is listed and opened", function() {
 
-    
+
         it("Verify if the response status is 200", function() {
             assert.equal(response.status, 200, `Response status should be 200`);
         })
-    
+
         it("Check if there's any QA job listed and open", async function() {
             const jobs = []
             for (const job of response.data.data) {
@@ -34,7 +34,7 @@ describe('Verify Job by Teamtailor API', function () {
             for (const job of jobs) {
                 for (const keyword of jobRef.keywords) {
                     if (job.title.toLowerCase().includes(keyword.toLowerCase())) {
-                        assert.equal(job.status.toLowerCase(), 'open', 
+                        assert.equal(job.status.toLowerCase(), 'open',
                             `Job "${job.title}" was found, but the status is "${job.status}" and should be "open"`)
                     }
                 }

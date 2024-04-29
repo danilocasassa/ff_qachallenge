@@ -3,6 +3,6 @@ const urls = {
     careers: "company/careers",
 }
 
-module.exports = { 
+module.exports = {
     urls
 };
